@@ -1,0 +1,50 @@
+.container__simple-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+  justify-content: normal;
+  height: 100%;
+  width: 100%;
+
+  h3 {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+
+    span {
+      font-weight: 500;
+      font-size: 1.125rem;
+      color: var(--primary-color);
+    }
+  }
+
+  h2 {
+    font-weight: 500;
+    margin-bottom: 1.875rem;
+  }
+
+  p {
+    font-size: 0.87rem;
+    font-weight: 500;
+    width: 100%;
+    height: 100px;
+    color: var(--quartenary-color);
+    margin-bottom: 2rem;
+  }
+
+  app-button {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container__simple-card h2 {
+    font-size: 1.575rem;
+  }
+
+  .container__simple-card h3 {
+    font-size: 1rem;
+  }
+}

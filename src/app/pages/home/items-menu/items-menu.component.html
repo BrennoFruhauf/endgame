@@ -1,0 +1,23 @@
+<div class="container__items-menu">
+  <button
+    id="btn-menu"
+    (click)="toggleButton()"
+    appClickedOutside
+    (clickedOutside)="clickedOutside()"
+  >
+    <span></span>
+  </button>
+  <ul id="items-menu">
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="selected"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+    </li>
+    <li><a routerLink="/games" routerLinkActive="selected">Games</a></li>
+    <li><a class="disabled">Blog</a></li>
+    <li><a class="disabled">Contact</a></li>
+  </ul>
+</div>

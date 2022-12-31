@@ -1,0 +1,132 @@
+header {
+  padding: 0 2rem;
+  background-image: url("../../../assets/bg-menu-home.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: 2px solid var(--primary-color);
+
+  .banner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 750px;
+  }
+}
+
+.intro-section {
+  background-color: #0c062e;
+
+  > div {
+    display: grid;
+    max-width: 1500px;
+    margin-inline: auto;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    justify-items: center;
+    gap: 1.5rem;
+    padding: 7rem 0;
+  }
+
+  app-simple-card {
+    margin: 0 2rem;
+    max-width: 370px;
+  }
+}
+
+.blog-section {
+  padding: 6.563rem 0;
+  background: linear-gradient(45deg, #501755 0%, #2d1854 100%);
+
+  > div {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    justify-items: center;
+    gap: 2rem;
+    max-width: 1175px;
+    margin-inline: auto;
+
+    .section__left {
+      display: grid;
+
+      h2 {
+        font-style: italic;
+        text-transform: uppercase;
+        padding-bottom: 3rem;
+        padding-left: 2rem;
+      }
+
+      :nth-child(2) {
+        margin: 0;
+      }
+
+      app-small-card {
+        display: inline-block;
+        margin-top: 5.375rem;
+        padding: 0 0 0 2rem;
+      }
+    }
+
+    .section__right {
+      padding: 0 2rem 0 0;
+      width: 100%;
+
+      .trending {
+        :last-child {
+          margin-bottom: 0;
+        }
+
+        h4 {
+          font-size: 1.5rem;
+          font-style: italic;
+          font-weight: 700;
+          text-transform: uppercase;
+          padding-bottom: 3rem;
+        }
+
+        .little-cards {
+          display: grid;
+          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          justify-items: center;
+        }
+
+        app-little-card {
+          display: inline-block;
+        }
+      }
+
+      app-card-menu {
+        display: block;
+        padding: 3rem 2rem;
+        border-radius: 1rem;
+        background-color: var(--secondary-color);
+        margin-top: 5.313rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .blog-section {
+    > div {
+      grid-template-columns: 1fr;
+
+      .section__left {
+        app-small-card {
+          padding: 0 2rem;
+        }
+      }
+
+      .section__right {
+        h4 {
+          padding-left: 2rem;
+        }
+
+        .little-cards {
+          padding-left: 2rem;
+        }
+      }
+    }
+  }
+}

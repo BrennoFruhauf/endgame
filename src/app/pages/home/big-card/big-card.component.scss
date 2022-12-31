@@ -1,0 +1,124 @@
+.container__big-card {
+  position: relative;
+  overflow: hidden;
+
+  .image {
+    background-image: url("https://preview.colorlib.com/theme/endgam/img/featured-bg.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    float: left;
+    width: calc(50% - 156px);
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  .content-container {
+    float: right;
+    width: calc(50% + 156px);
+    background: white;
+    padding: 6.25rem 3.125rem 8.125rem 5rem;
+
+    .content {
+      position: relative;
+      display: flex;
+      max-width: 810px;
+      flex-direction: column;
+      align-items: normal;
+      justify-content: normal;
+      height: 100%;
+      width: 100%;
+
+      h3 {
+        font-weight: 500;
+        font-size: 1.125rem;
+        color: var(--quartenary-color);
+        margin-bottom: 20px;
+
+        span {
+          font-weight: 500;
+          font-size: 1.125rem;
+          color: var(--primary-color);
+        }
+      }
+
+      h2 {
+        font-weight: 500;
+        font-size: 3.75rem;
+        margin-bottom: 1.875rem;
+        color: #111111;
+      }
+
+      p {
+        font-size: 0.97rem;
+        font-weight: 500;
+        width: 100%;
+        text-align: justify;
+        color: var(--quartenary-color);
+        margin-bottom: 2.1rem;
+      }
+
+      a {
+        position: absolute;
+        bottom: -2rem;
+        color: #251e2f;
+        display: inline-block;
+        font-size: 0.938rem;
+        font-weight: 700;
+        font-style: italic;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        z-index: 1;
+
+        > img {
+          display: inline-block;
+          position: relative;
+          left: 13px;
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container__big-card {
+    .image {
+      display: none;
+    }
+
+    .content-container {
+      float: none;
+      width: 100%;
+      padding: 6.25rem 3.125rem 5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container__big-card .content-container .content {
+    h3,
+    span {
+      font-size: 1rem;
+    }
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 0.87rem;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container__big-card .content-container .content {
+    h2 {
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<div class="container__card-menu">
+  <h2>{{ title }}</h2>
+  <ul>
+    <li *ngFor="let item of items">
+      <a (click)="filterGames(item[0])">{{ item[0] }}</a>
+    </li>
+  </ul>
+</div>

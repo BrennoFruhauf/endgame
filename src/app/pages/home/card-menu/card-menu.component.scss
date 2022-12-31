@@ -1,0 +1,31 @@
+.container__card-menu {
+  h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  li {
+    position: relative;
+
+    a {
+      display: inline-block;
+      font-weight: 500;
+      margin-bottom: 15px;
+      color: var(--quartenary-color);
+      padding-right: 1.188rem;
+      transition: all 0.2s;
+      background-image: url("../../../../assets/double-arrow.webp");
+      background-repeat: no-repeat;
+      background-position: right -120% center;
+      background-size: 11px;
+
+      &:hover {
+        color: var(--primary-color);
+        background-position: right center;
+      }
+    }
+  }
+}

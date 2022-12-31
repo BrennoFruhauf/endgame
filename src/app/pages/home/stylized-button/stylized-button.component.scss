@@ -1,0 +1,55 @@
+.container__stylized-button {
+  position: relative;
+  height: 100px;
+  opacity: 0;
+  animation: slide-top 0.5s 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-style: italic;
+  padding: 24px 30px;
+  text-transform: uppercase;
+  min-width: 186px;
+  color: #081624;
+  text-align: center;
+  cursor: pointer;
+  background-color: #fff;
+  z-index: 1;
+
+  > img {
+    display: inline-block;
+    position: relative;
+    left: 13px;
+    width: auto;
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 9px;
+    top: 10px;
+    background-color: var(--primary-color);
+    box-shadow: var(--purple-shadow);
+    z-index: -2;
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  a {
+    font-size: 0.9rem;
+    min-width: auto;
+  }
+}

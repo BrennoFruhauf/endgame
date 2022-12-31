@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+// Global Variables
+@import "./variables";
+
+* {
+  font-size: 16px;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+  min-width: 350px;
+  color: white;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  color: white;
+
+  &:visited {
+    color: white;
+  }
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+// Global Animations
+@keyframes slide-top {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

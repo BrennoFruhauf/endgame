@@ -1,0 +1,32 @@
+.container__little-card {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+  }
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+
+    h3 {
+      font-size: 0.75rem;
+      margin-bottom: 0.5rem;
+
+      span {
+        color: var(--primary-color);
+        font-size: 0.75rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.125rem;
+    }
+  }
+}

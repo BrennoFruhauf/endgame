@@ -1,0 +1,26 @@
+ul {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  > li {
+    a {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      margin: 0 0.5rem;
+      border-radius: 50%;
+      transition: background-color 200ms ease-in-out;
+
+      &:hover {
+        background-color: var(--primary-color);
+        transition: background-color 200ms ease-in-out;
+      }
+
+      img {
+        width: 0.8rem;
+      }
+    }
+  }
+}

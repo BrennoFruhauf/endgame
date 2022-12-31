@@ -1,0 +1,47 @@
+.container__title {
+  position: relative;
+  text-align: center;
+  max-width: 1100px;
+
+  h2 {
+    position: relative;
+    font-size: 10rem;
+    bottom: 0;
+    opacity: 0;
+    white-space: nowrap;
+    animation: slide-top 0.5s 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    opacity: 0;
+    margin-bottom: 4rem;
+    animation: slide-top 0.5s 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  .container__title {
+    h2 {
+      font-size: 7rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .container__title {
+    h2 {
+      font-size: 4.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+}

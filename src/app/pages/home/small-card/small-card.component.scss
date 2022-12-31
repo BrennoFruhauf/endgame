@@ -1,0 +1,26 @@
+.container__small-card {
+  display: flex;
+  flex-direction: row;
+  gap: 1.875rem;
+}
+
+.photo {
+  max-height: 300px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .container__small-card {
+    flex-direction: column;
+  }
+
+  .photo {
+    max-height: min-content;
+    min-height: 200px;
+  }
+}
