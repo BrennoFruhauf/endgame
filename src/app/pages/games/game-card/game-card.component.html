@@ -1,0 +1,9 @@
+<div class="container__game-card">
+  <a class="game-image" [routerLink]="id"
+    ><img src="{{ [this.parameter.small_image] }}" alt=""
+  /></a>
+  <a [routerLink]="id"
+    ><h2>{{ [this.parameter.name] }}</h2></a
+  >
+  <app-button [link]="id"></app-button>
+</div>

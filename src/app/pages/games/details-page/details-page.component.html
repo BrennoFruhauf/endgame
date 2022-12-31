@@ -1,0 +1,71 @@
+<div class="container__details-page">
+  <div class="content-container">
+    <div class="image-container">
+      <img class="banner" src="{{ imageUrl }}" alt="" />
+      <img class="logo" src="{{ logoUrl }}" alt="" />
+    </div>
+    <div class="content">
+      <div class="main">
+        <p class="date">{{ publishedDate }} / in <span>Games</span></p>
+        <h2 class="title">{{ gameName }}</h2>
+
+        <div class="gameplay">
+          <h4 class="subtitle">Gameplay</h4>
+          <p>
+            {{ gameplayText }}
+          </p>
+        </div>
+
+        <div class="conclusion">
+          <h4 class="subtitle">Conclusion</h4>
+          <p>
+            {{ conclusionText }}
+          </p>
+        </div>
+
+        <div class="share">
+          <span>Share: </span>
+          <app-social-media></app-social-media>
+        </div>
+      </div>
+      <div class="right">
+        <div class="rating">
+          <h4>Ratings</h4>
+          <ul>
+            <li>
+              Price <span>{{ priceRating }}/5</span>
+            </li>
+            <li>
+              Graphics <span>{{ graphicRating }}/5</span>
+            </li>
+            <li>
+              Gameplay <span>{{ gameplayRating }}/5</span>
+            </li>
+            <li>
+              Difficulty <span>{{ difficultyRating }}/5</span>
+            </li>
+          </ul>
+          <h5>
+            <span class="rating-title">Rating</span>
+            <span class="rating-number"
+              >{{ totalRating }}<span class="white-text"> / 5</span></span
+            >
+          </h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="author">
+  <div>
+    <div class="image-avatar">
+      <img src="{{ authorPhoto }}" alt="" />
+    </div>
+    <div class="author-text">
+      <h3>Written by: {{ authorName }}</h3>
+      <p>
+        {{ authorDescription }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<section class="container">
+  <div class="content">
+    <div class="letter">
+      <a *ngFor="let letter of alphabet">{{ letter }}</a>
+    </div>
+    <div class="content-main">
+      <div class="cards">
+        <app-game-card
+          *ngFor="let card of cards"
+          [parameter]="card"
+          [id]="card.id"
+        ></app-game-card>
+      </div>
+      <div class="menu-list">
+        <app-card-menu [title]="'Platform'" [items]="platforms"></app-card-menu>
+        <app-card-menu [title]="'Genre'" [items]="genres"></app-card-menu>
+      </div>
+    </div>
+  </div>
+</section>
